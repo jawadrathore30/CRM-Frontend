@@ -69,7 +69,7 @@ export default function Login() {
 			const res = await fetch("https://crm-backend-production-0336.up.railway.app/api/auth/signin", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
-				credentials: "include",
+				credentials: true,
 				body: JSON.stringify({ email, password, rememberMe }),
 			});
 
